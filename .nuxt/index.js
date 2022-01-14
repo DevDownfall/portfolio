@@ -12,9 +12,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_7e12347c from 'nuxt_plugin_plugin_7e12347c' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_plugin_160a38f8 from 'nuxt_plugin_plugin_160a38f8' // Source: .\\vuetify\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_3877829f from 'nuxt_plugin_axios_3877829f' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_79514894 from 'nuxt_plugin_plugin_79514894' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_4ca6ebfe from 'nuxt_plugin_plugin_4ca6ebfe' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_54a230d9 from 'nuxt_plugin_axios_54a230d9' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_vuehtml2pdf_796dc3f4 from 'nuxt_plugin_vuehtml2pdf_796dc3f4' // Source: ..\\plugins\\vue-html2pdf (mode: 'client')
 
 // Component: <ClientOnly>
@@ -179,16 +179,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_7e12347c === 'function') {
-    await nuxt_plugin_plugin_7e12347c(app.context, inject)
+  if (typeof nuxt_plugin_plugin_79514894 === 'function') {
+    await nuxt_plugin_plugin_79514894(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_160a38f8 === 'function') {
-    await nuxt_plugin_plugin_160a38f8(app.context, inject)
+  if (typeof nuxt_plugin_plugin_4ca6ebfe === 'function') {
+    await nuxt_plugin_plugin_4ca6ebfe(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_3877829f === 'function') {
-    await nuxt_plugin_axios_3877829f(app.context, inject)
+  if (typeof nuxt_plugin_axios_54a230d9 === 'function') {
+    await nuxt_plugin_axios_54a230d9(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuehtml2pdf_796dc3f4 === 'function') {

@@ -4,25 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _a185e40a = () => interopDefault(import('..\\pages\\dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
-const _3a194060 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _302c685f = () => interopDefault(import('..\\pages\\quote2.vue' /* webpackChunkName: "pages/quote2" */))
-const _303a7fe0 = () => interopDefault(import('..\\pages\\quote3.vue' /* webpackChunkName: "pages/quote3" */))
-const _3e0be70c = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
-const _c5d34c66 = () => interopDefault(import('..\\pages\\summary.vue' /* webpackChunkName: "pages/summary" */))
-const _8c060324 = () => interopDefault(import('..\\pages\\quote\\default.vue' /* webpackChunkName: "pages/quote/default" */))
-const _4fa66578 = () => interopDefault(import('..\\pages\\quote\\galvo.vue' /* webpackChunkName: "pages/quote/galvo" */))
-const _b5841a2c = () => interopDefault(import('..\\pages\\quote\\galvo2.vue' /* webpackChunkName: "pages/quote/galvo2" */))
-const _72902641 = () => interopDefault(import('..\\pages\\quote\\list.vue' /* webpackChunkName: "pages/quote/list" */))
-const _65923d59 = () => interopDefault(import('..\\pages\\quote\\qandr.vue' /* webpackChunkName: "pages/quote/qandr" */))
-const _3381ffb1 = () => interopDefault(import('..\\pages\\quotes\\all.vue' /* webpackChunkName: "pages/quotes/all" */))
-const _17aec1fd = () => interopDefault(import('..\\pages\\users\\manage\\all.vue' /* webpackChunkName: "pages/users/manage/all" */))
-const _0e455596 = () => interopDefault(import('..\\pages\\quotes\\confirmation\\_id.vue' /* webpackChunkName: "pages/quotes/confirmation/_id" */))
-const _ef6baa00 = () => interopDefault(import('..\\pages\\quotes\\edit\\_id.vue' /* webpackChunkName: "pages/quotes/edit/_id" */))
-const _af59f4d4 = () => interopDefault(import('..\\pages\\users\\manage\\_id.vue' /* webpackChunkName: "pages/users/manage/_id" */))
-const _77b3796c = () => interopDefault(import('..\\pages\\quotes\\_id.vue' /* webpackChunkName: "pages/quotes/_id" */))
-const _1b1a36c4 = () => interopDefault(import('..\\pages\\user\\_profile.vue' /* webpackChunkName: "pages/user/_profile" */))
-const _194bbcb9 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _eba7df26 = () => interopDefault(import('..\\pages\\dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
+const _40cd297c = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _3cd9ce5a = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _75365fcb = () => interopDefault(import('..\\pages\\users\\manage\\all.vue' /* webpackChunkName: "pages/users/manage/all" */))
+const _05daa364 = () => interopDefault(import('..\\pages\\users\\manage\\_id.vue' /* webpackChunkName: "pages/users/manage/_id" */))
+const _7dc4cd28 = () => interopDefault(import('..\\pages\\user\\_profile.vue' /* webpackChunkName: "pages/user/_profile" */))
+const _15f1c82b = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -37,79 +25,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/dashboard",
-    component: _a185e40a,
+    component: _eba7df26,
     name: "dashboard"
   }, {
     path: "/login",
-    component: _3a194060,
+    component: _40cd297c,
     name: "login"
   }, {
-    path: "/quote2",
-    component: _302c685f,
-    name: "quote2"
-  }, {
-    path: "/quote3",
-    component: _303a7fe0,
-    name: "quote3"
-  }, {
     path: "/register",
-    component: _3e0be70c,
+    component: _3cd9ce5a,
     name: "register"
   }, {
-    path: "/summary",
-    component: _c5d34c66,
-    name: "summary"
-  }, {
-    path: "/quote/default",
-    component: _8c060324,
-    name: "quote-default"
-  }, {
-    path: "/quote/galvo",
-    component: _4fa66578,
-    name: "quote-galvo"
-  }, {
-    path: "/quote/galvo2",
-    component: _b5841a2c,
-    name: "quote-galvo2"
-  }, {
-    path: "/quote/list",
-    component: _72902641,
-    name: "quote-list"
-  }, {
-    path: "/quote/qandr",
-    component: _65923d59,
-    name: "quote-qandr"
-  }, {
-    path: "/quotes/all",
-    component: _3381ffb1,
-    name: "quotes-all"
-  }, {
     path: "/users/manage/all",
-    component: _17aec1fd,
+    component: _75365fcb,
     name: "users-manage-all"
   }, {
-    path: "/quotes/confirmation/:id?",
-    component: _0e455596,
-    name: "quotes-confirmation-id"
-  }, {
-    path: "/quotes/edit/:id?",
-    component: _ef6baa00,
-    name: "quotes-edit-id"
-  }, {
     path: "/users/manage/:id?",
-    component: _af59f4d4,
+    component: _05daa364,
     name: "users-manage-id"
   }, {
-    path: "/quotes/:id?",
-    component: _77b3796c,
-    name: "quotes-id"
-  }, {
     path: "/user/:profile?",
-    component: _1b1a36c4,
+    component: _7dc4cd28,
     name: "user-profile"
   }, {
     path: "/",
-    component: _194bbcb9,
+    component: _15f1c82b,
     name: "index"
   }],
 

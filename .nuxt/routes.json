@@ -2,134 +2,43 @@
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\dashboard.vue",
-    "chunkName": "pages/dashboard",
-    "_name": "_a185e40a"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\dashboard.vue",
+    "chunkName": "pages/dashboard"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\login.vue",
-    "chunkName": "pages/login",
-    "_name": "_3a194060"
-  },
-  {
-    "name": "quote2",
-    "path": "/quote2",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote2.vue",
-    "chunkName": "pages/quote2",
-    "_name": "_302c685f"
-  },
-  {
-    "name": "quote3",
-    "path": "/quote3",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote3.vue",
-    "chunkName": "pages/quote3",
-    "_name": "_303a7fe0"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\register.vue",
-    "chunkName": "pages/register",
-    "_name": "_3e0be70c"
-  },
-  {
-    "name": "summary",
-    "path": "/summary",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\summary.vue",
-    "chunkName": "pages/summary",
-    "_name": "_c5d34c66"
-  },
-  {
-    "name": "quote-default",
-    "path": "/quote/default",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote\\\\default.vue",
-    "chunkName": "pages/quote/default",
-    "_name": "_8c060324"
-  },
-  {
-    "name": "quote-galvo",
-    "path": "/quote/galvo",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote\\\\galvo.vue",
-    "chunkName": "pages/quote/galvo",
-    "_name": "_4fa66578"
-  },
-  {
-    "name": "quote-galvo2",
-    "path": "/quote/galvo2",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote\\\\galvo2.vue",
-    "chunkName": "pages/quote/galvo2",
-    "_name": "_b5841a2c"
-  },
-  {
-    "name": "quote-list",
-    "path": "/quote/list",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote\\\\list.vue",
-    "chunkName": "pages/quote/list",
-    "_name": "_72902641"
-  },
-  {
-    "name": "quote-qandr",
-    "path": "/quote/qandr",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quote\\\\qandr.vue",
-    "chunkName": "pages/quote/qandr",
-    "_name": "_65923d59"
-  },
-  {
-    "name": "quotes-all",
-    "path": "/quotes/all",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quotes\\\\all.vue",
-    "chunkName": "pages/quotes/all",
-    "_name": "_3381ffb1"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\register.vue",
+    "chunkName": "pages/register"
   },
   {
     "name": "users-manage-all",
     "path": "/users/manage/all",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\users\\\\manage\\\\all.vue",
-    "chunkName": "pages/users/manage/all",
-    "_name": "_17aec1fd"
-  },
-  {
-    "name": "quotes-confirmation-id",
-    "path": "/quotes/confirmation/:id?",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quotes\\\\confirmation\\\\_id.vue",
-    "chunkName": "pages/quotes/confirmation/_id",
-    "_name": "_0e455596"
-  },
-  {
-    "name": "quotes-edit-id",
-    "path": "/quotes/edit/:id?",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quotes\\\\edit\\\\_id.vue",
-    "chunkName": "pages/quotes/edit/_id",
-    "_name": "_ef6baa00"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\users\\\\manage\\\\all.vue",
+    "chunkName": "pages/users/manage/all"
   },
   {
     "name": "users-manage-id",
     "path": "/users/manage/:id?",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\users\\\\manage\\\\_id.vue",
-    "chunkName": "pages/users/manage/_id",
-    "_name": "_af59f4d4"
-  },
-  {
-    "name": "quotes-id",
-    "path": "/quotes/:id?",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\quotes\\\\_id.vue",
-    "chunkName": "pages/quotes/_id",
-    "_name": "_77b3796c"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\users\\\\manage\\\\_id.vue",
+    "chunkName": "pages/users/manage/_id"
   },
   {
     "name": "user-profile",
     "path": "/user/:profile?",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\user\\\\_profile.vue",
-    "chunkName": "pages/user/_profile",
-    "_name": "_1b1a36c4"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\user\\\\_profile.vue",
+    "chunkName": "pages/user/_profile"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\trotec-quote\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_194bbcb9"
+    "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
