@@ -1,142 +1,67 @@
 <template>
   <div>
-    <Navbar />
-    <main class="h-full flex items-center px-6 lg:px-32 bg-purple-900 text-white">
-
+    
+    <main class="h-screen flex items-center px-6 lg:px-32 bg-gradient-to-b from-royal to-light text-white relative">
+      <Navbar />
+      <section class="w-full md:w-9/12 xl:w-8/12" >
+        <span class="font-bold uppercase tracking-widest">Atomic</span>
+        <h1 class="text-3xl lg:text-5xl font-bold text-pink-500" >
+          Tail<br/>Design
+        </h1>
+        <p class="font-bold mb-1 " data-replace='{ "translate-y-12": "translate-y-0" }'>The Design is in the de{Tail}s...</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </section>
+      
+      <footer class="absolute right-0 bottom-0 p-6 lg:p-32">
+        <p class="font-bold mb-1">Yours Truly,</p>
+        <p>Matthew Clarke (Full Stack Developer)</p>
+        <div class="animate-bounce w-6 h-6 bg-black">
+        <!-- ... -->
+      </div>
+      </footer>
+      
     </main>
-    <Footer />
+    <!-- Page 2 --> 
+    <!-- <main id="page2" class="h-screen flex items-center px-6 lg:px-32 bg-gradient-to-b from-royal to-light text-white relative">
+      <section class="w-full md:w-9/12 xl:w-8/12">
+        <span class="font-bold uppercase tracking-widest">Atomic</span>
+        <h1 class="text-3xl lg:text-5xl font-bold text-pink-500">
+          Tail<br/>Design
+        </h1>
+        <p class="font-bold mb-1">The Design is in the de{Tail}s...</p>
+        <p>Lorem ipsum dolor sit amet...</p>
+      </section>
+      <footer class="absolute right-0 bottom-0 p-6 lg:p-32">
+        <p class="font-bold mb-1">Yours Truly,</p>
+        <p>Matthew Clarke (Full Stack Developer)</p>
+      </footer>
+    </main> -->
+
+    
   </div>
   
 </template>
 
 <script>
+import Navbar from '../../buckystyle-fantasy/Website/components/Navbar.vue';
 export default {
-  async mounted() {
-
+  components: {
+    Navbar: () => import(`~/components/Navbar.vue`)
   },
-
-  data: () => ({
-    currentMachine: "",
-    currentPower: "",
-    information: [],
-    machines: [],
-    options: [],
-    additions: [],
-    powers: [],
-    totalMachineCost: 0,
-    totalOptionCost: 0,
-    totalCost: 0,
-    selectedMachine: [],
-    checkedOptions: [],
-    selectedAddition: [],
-    messages: {},
-    quantity: "1",
-    educationalDiscount: false,
-    additionPrice: [],
-    emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
-    ],
-    numRules: [
-      (v) => !!v || "Phone Number is required",
-      (v) =>
-        /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(v) ||
-        "Phone Number must be valid",
-    ],
-    partHeaders: [
-      { text: "Laser System", value: "name" },
-      { text: "Power", value: "power" },
-      { text: "Unit Price", value: "price" },
-      { text: "Quantity", value: "quantity" },
-      { text: "Total", value: "total" },
-    ],
-    additionHeaders: [
-      { text: "Name", value: "name" },
-      { text: "Power", value: "power" },
-      { text: "Price", value: "price" },
-      { text: "", value: "" },
-      { text: "Total", value: "total" },
-    ],
-    discountHeaders: [
-      { text: "Item", value: "item" },
-      { text: "Discount", value: "discount" },
-      { text: "", value: "" },
-      { text: "Total", value: "total " },
-    ],
-    components: {
-      Navbar: () => import('~/components/Navbar.vue'),
-      Footer: () => import('~/components/Footer.vue'),
-    }
-
-  }),
-
-  methods: {
-    selectMachine() {
-      const machines = this.machines.filter(
-        (i) => i.name == this.currentMachine
-      );
-      this.powers = machines.map((i) => i.power);
-    },
-    selectPower() {
-      var machine = this.machines.filter(
-        (i) => i.name == this.currentMachine && i.power == this.currentPower
-      );
-      var machine = machine.filter((i) => (i.quantity = `<input type="text">`));
-
-      this.selectedMachine = machine;
-    },
-    addCommas(nStr) {
-      nStr += "";
-      var x = nStr.split(".");
-      var x1 = x[0];
-      var x2 = x.length > 1 ? "." + x[1] : "";
-      var rgx = /(\d+)(\d{3})/;
-      while (rgx.test(x1)) {
-        x1 = x1.replace(rgx, "$1" + "," + "$2");
-      }
-      return x1 + x2;
-    },
-    setTotal(price, quantity, options) {
-      const reducedCost =
-        parseInt(price * quantity) +
-        parseInt(
-          options
-            .map((i) => i.price)
-            .reduce((x, y) => parseInt(x) + parseInt(y))
-        );
-      this.totalCost = reducedCost;
-      return this.addCommas(reducedCost);
-    },
-
-    addAddition(id, price) {
-      const exist = this.additionPrice.filter((i) => i.id == id);
-      if (exist[0]) {
-        this.additionPrice = this.additionPrice.filter((i) => i.id != id);
-      } else {
-        this.additionPrice.push({ id: id, price: price });
-      }
-    },
-
-    splitString() {
-      return
-      console.log(this.selectedMachine[0])
-      var fixedString = string;
-      var fixedString = fixedString.split(':');
-      let i = 0
-      fixedString.forEach(s => {
-        console.log(s)
-        i++
-        return s
-      })
-    }
-  },
-
-  // {{/*<ul><li v-for="(power, p) in this.selectedMachine[0]" :key="'D' + p">{{splitString(power.power_control)}}</li></ul><br>*/}}
-  // {{/*<ul><li v-for="(motion, m) in this.selectedMachine[0]" :key="'C' + m">{{splitString(motion.motion_control)}}</li></ul><br> */}}
 };
 </script>
 <style scoped>
-  .v-application a {
-    color: #374151
-  }
+
+#page2 {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
 </style>

@@ -3,42 +3,49 @@
     "name": "dashboard",
     "path": "/dashboard",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\dashboard.vue",
-    "chunkName": "pages/dashboard"
+    "chunkName": "pages/dashboard",
+    "_name": "_eba7df26"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "_name": "_40cd297c"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\register.vue",
-    "chunkName": "pages/register"
+    "chunkName": "pages/register",
+    "_name": "_3cd9ce5a"
   },
   {
     "name": "users-manage-all",
     "path": "/users/manage/all",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\users\\\\manage\\\\all.vue",
-    "chunkName": "pages/users/manage/all"
+    "chunkName": "pages/users/manage/all",
+    "_name": "_75365fcb"
   },
   {
     "name": "users-manage-id",
     "path": "/users/manage/:id?",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\users\\\\manage\\\\_id.vue",
-    "chunkName": "pages/users/manage/_id"
+    "chunkName": "pages/users/manage/_id",
+    "_name": "_05daa364"
   },
   {
     "name": "user-profile",
     "path": "/user/:profile?",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\user\\\\_profile.vue",
-    "chunkName": "pages/user/_profile"
+    "chunkName": "pages/user/_profile",
+    "_name": "_7dc4cd28"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\MattyBoi\\\\Documents\\\\Downfall\\\\portfolio\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_15f1c82b"
   }
 ]

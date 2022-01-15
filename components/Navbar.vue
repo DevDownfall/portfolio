@@ -1,105 +1,57 @@
 <template>
   <div>
-    <v-app-bar app color="white">
-      <div class="trotec-image">
-        <button @click="handleBack(`/`)">
-          <img alt="25_trotec.5b99258d661fb" width="210" height="85" src="~/assets/svg/trotec.svg" />
-        </button>
-        <div class="md:hidden md:px-4">
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        </div>
+    <header class="w-full absolute left-0 top-0 p-6 lg:p-32">
+    <div class="flex justify-between">
+      <div>
+        <h1 class="text-3xl font-bold">Downfall</h1>
+        <span>Design is everything...</span>
       </div>
-
-      <div v-if="user.loggedIn">
-        <div v-if="user.role >= 3">
-            <NuxtLink :to="{ name: 'summary'}" class="ml-2">Summary</NuxtLink>
-            <NuxtLink :to="{ path: 'quote/list'}" class="ml-2">Quote</NuxtLink>
-            <NuxtLink :to="{ name: 'orders'}" class="ml-2">Orders</NuxtLink>
-            <NuxtLink :to="{ name: 'dashboard'}" class="ml-2">Dashboard</NuxtLink>
-            <div class="text-right">
-                <NuxtLink :to="{ path: `user/${user.userID}`}">Profile</NuxtLink>
+      
+      <div>
+        <ul class="flex">
+          <li class="ml-24">
+            <div class="" >
+              <a href="" class='hover:animate-spin'>
+                <div class="flex items-center justify-end">
+                  <div class="w-10 border-b border-solid border-white"></div>
+                    <h1 class="ml-3 text-3xl font-bold">1</h1>
+                </div>
+                <div class="text-right">Projects</div>
+              </a>
             </div>
-          <!-- <v-btn v-for="item in adminNav" :key="item.id" @click.prevent="handleBack(`/${item.icon}`)" :title="item.title" tyle>{{ item.text }}</v-btn> -->
-          <!-- <NuxtLink :to="`user/${user.userID}`"><v-btn text absolute right top>Profile</v-btn></NuxtLink> -->
-        </div>
-        <div v-else>
-          <v-btn v-for="item in loggedInNav" :key="item.id" @click.prevent="handleBack(`/${item.icon}`)" :title="item.title" tyle>{{ item.text }}</v-btn>
-          <NuxtLink :to="`user/${user.userID}`"><v-btn text absolute right top>Profile</v-btn></NuxtLink>
-        </div>
+          </li>
+          <li class="ml-24">
+            <a href="">
+              <div class="flex items-center justify-end">
+                <div class="w-10 border-b border-solid border-white hover:bg-royal"></div>
+                  <h1 class="ml-3 text-3xl font-bold">2</h1>
+              </div>
+              <div class="text-right">Components</div>
+            </a>
+          </li>
+          <li class="ml-24">
+            <a href="">
+              <div class="flex items-center justify-end">
+                <div class="w-10 border-b border-solid border-white"></div>
+                  <h1 class="ml-3 text-3xl font-bold">3</h1>
+              </div>
+              <div class="text-right">CSS Modules</div>
+            </a>
+          </li>
+
+          <li class="ml-24">
+            <a href="">
+              <div class="flex items-center justify-end">
+                <div class="w-10 border-b border-solid border-white"></div>
+                  <h1 class="ml-3 text-3xl font-bold">4</h1>
+              </div>
+              <div class="text-right">Build & Deploy</div>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div v-else>
-        <v-btn v-for="item in nav" :key="item.id" @click.prevent="handleBack(`/${item.icon}`)" :title="item.title" tyle>{{ item.text }}</v-btn>
-        <NuxtLink :to="`/login`"><v-btn text absolute right top>Login</v-btn></NuxtLink>
-        <div class='float-right'>
-            <NuxtLink :to="{ name: 'login'}" class="ml-2 absolute">Login</NuxtLink>
-            <NuxtLink :to="{ name: 'register'}" class="ml-2 absolute">Sign Up</NuxtLink>
-        </div>
-      </div>
-    </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute bottom temporary>
-      <v-list nav dense>
-        <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
-          <v-list-item>
-            <v-list-item-title>Foo</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Bar</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Fizz</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Buzz</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
-
-    <!-- <div class="flex flex-wrap">
-                <NuxtLink :to="{ name: 'index'}" class="flex" >
-                    <img src="~/assets/svg/trotec.svg" width="140">
-                </NuxtLink>
-                <nav class="flex-wrap flex">
-                    <NuxtLink v-for="item in adminNav" :key="item.icon" :to="`/${item.icon}`">{{item.text}}</NuxtLink>
-                </nav>
-            </div> -->
-    <!-- <nav class="flex flex-wrap items-center justify-between w-full py-0 md:py-0 px-4 text-lg text-gray-700 bg-white">
-                <div>
-                    <a href="/">
-                        <img alt="25_trotec.5b99258d661fb" width="140" height="25" src="~/assets/svg/trotec.svg" />
-                    </a>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </div>
-                <div class="hidden w-full md:flex md:items-center md:w-auto " id="menu">
-                    <div v-if="user.loggedIn">
-                        <div v-if="user.role >= 3">
-                            <ul class="text-base text-black pt-4 md:flex md:justify-between md:pt-0">
-                                <li v-for="item in adminNav" :key="item.icon">
-                                    <NuxtLink :to="`/${item.icon}`"><a class="md:p-4 py-2 text-gray-700 block" href="#">{{item.text}}</a></NuxtLink>
-                                </li>
-                            </ul>
-                            <NuxtLink :to="`user/${user.userID}`">Profile</NuxtLink>
-                        </div>
-                        <div v-else-if="user.role ">
-                            
-                        </div>
-                    </div>
-                    <div v-else>
-                        <ul class="text-base text-black pt-4 md:flex md:justify-between md:pt-0">
-                            <li v-for="item in nav" :key="item.icon">
-                                <NuxtLink :to="`/${item.icon}`"><a class="md:p-4 py-2 block hover:text-purple-400" href="#">{{item.text}}</a></NuxtLink>
-                            </li>
-                        </ul>
-                        <NuxtLink to="login">Log In</NuxtLink>
-                        <NuxtLink to="register">Sign Up</NuxtLink>
-                    </div>
-                </div>
-            </nav> -->
+    </div>
+  </header>
   </div>
 </template>
 
@@ -110,13 +62,7 @@ import { APIPath } from "../plugins/variables.js";
 
 export default {
   async mounted() {
-        const User = await axios.get(`${APIPath}v1/auth/login`, { withCredentials: true });
-        if (User.data.loggedIn) {
-        this.user.loggedIn = true;
-        this.user.userID = User.data.user[0].id;
-        this.user.role = User.data.user[0].role;
-        this.user.username = User.data.user[0].username;
-        }
+        
   },
   watch: {
     group() {
@@ -184,7 +130,5 @@ export default {
 };
 </script>
 <style scoped>
-.v-application a {
-  color: #000000;
-}
+
 </style>
